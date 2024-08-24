@@ -1,0 +1,11 @@
+สร้าง data base SQL
+
+CREATE TABLE activities (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    activity_name VARCHAR(255) NOT NULL,
+    description TEXT,
+    activity_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO activities (activity_name, description, activity_date)
+VALUES ('Meeting', 'Discuss project timeline', '2024-08-25');
